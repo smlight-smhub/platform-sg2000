@@ -1,0 +1,20 @@
+{
+  "build": {
+    "core": "c906l",
+    "cpu": "thead-c906",
+    "f_cpu": "700000000L",
+    "mcu": "sg2000",
+    "ldscript": "smhub_lscript.ld"
+  },
+  "frameworks": [
+    "freertos"
+  ],
+  "name": "SMLIGHT SMHUB",
+  "upload": {
+    "protocol": "custom",
+    "maximum_size": 917504,
+    "maximum_ram_size": 1048576
+  },
+  "url": "https://smlight.tech",
+  "vendor": "SMLIGHT"
+}

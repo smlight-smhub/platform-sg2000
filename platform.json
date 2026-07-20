@@ -1,0 +1,34 @@
+{
+  "name": "sg2000",
+  "version": "1.0.0",
+  "title": "SG2000",
+  "description": "PlatformIO registry package for SMLIGHT SMHUB targeting RISC-V bare-metal and FreeRTOS development",
+  "url": "https://github.com/smlight-smhub/platform-sg2000.git",
+  "homepage": "https://smlight.tech",
+  "author": {
+    "name": "Tim Lunn",
+    "email": "tl@smlight.tech"
+  },
+  "license": "GPL-3.0-or-later",
+  "engines": {
+    "platformio": "^6.0.0"
+  },
+  "frameworks": {
+    "freertos": {
+      "package": "framework-sg2000-rtos",
+      "script": "builder/frameworks/freertos.py",
+      "description": "FreeRTOS for SG2000"
+    }
+  },
+  "packages": {
+    "framework-sg2000-rtos": {
+      "type": "framework",
+      "optional": true,
+      "version": "https://github.com/smlight-smhub/framework-sg2000-rtos/releases/download/v1.0.0/framework-sg2000-rtos-v1.0.0.tar.xz"
+    },
+    "toolchain-riscv-xpack": {
+      "type": "toolchain",
+      "version": "~1.150200.1"
+    }
+  }
+}
