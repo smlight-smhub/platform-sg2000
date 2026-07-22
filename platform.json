@@ -21,6 +21,10 @@
     }
   },
   "packages": {
+    "tool-dummy-uploader": {
+      "type": "uploader",
+      "optional": true
+    },
     "framework-sg2000-rtos": {
       "type": "framework",
       "optional": true,
